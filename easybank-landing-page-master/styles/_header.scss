@@ -1,0 +1,32 @@
+.header {
+    width: 100%;
+    position: fixed;
+    background-color: $white;
+    z-index: 10;
+    margin: auto;
+
+    .nav {
+        height: 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        padding: 0rem 1.5rem 0rem 1.5rem;
+
+        &__menu {
+            display: none;
+        }
+
+        &__logo {
+            display: flex;
+        }
+
+        &__toggle {
+            cursor: pointer;
+        }
+
+        .btn__header {
+            display: none;
+        }
+    }
+}

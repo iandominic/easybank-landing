@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input {
+    border: none;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.main {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 968px;
+}
+
+.grid {
+    display: grid;
+}
+
+/* Scroll up */
+
+.scrollup {
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    display: flex;
+    background-color: rgb(27, 27, 27);
+    border-radius: .5rem;
+    padding: .45rem;
+    opacity: 9;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+}
+  
+.scrollup:hover {
+    background-color: rgb(20, 20, 20);
+    opacity: 1;
+}
+  
+.scrollup__icon {
+    color: white;
+    font-size: 1.55rem;
+}
+
+.container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+}
+
+  
+/* Show Scroll Up*/
+
+.show-scroll {
+    bottom: 5rem;
+}
+
+/* Scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    box-shadow:  grey; 
+    border-radius: 5px;
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(20, 20, 20); 
+
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #0a0a0a; 
+}
+
+.active-link {
+    border-bottom: 1px solid black;
+    
+}
+  
+
